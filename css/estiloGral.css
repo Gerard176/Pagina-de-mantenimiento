@@ -1,0 +1,161 @@
+body{
+    color:black;
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: rgb(221, 223, 230);
+    margin: 0px;
+}
+h1{
+    color: aliceblue;
+    background-color: rgb(36, 8, 88);
+    margin-left: 40px;
+    padding: 20px 0px 20px 0px;
+    margin: 0px;
+    border-radius: 0px;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    float: left;
+    width: 20.9%;
+    text-align: center;
+}
+
+header{
+    
+    color: black ;
+    margin: 0px;
+    padding: 0px;
+    
+}
+#navegacion li {
+    display: inline;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    margin: 0px;
+    padding-top: 30px;
+    padding-bottom:30px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+#busqueda{
+    width: 600px;
+    margin: 0px;
+    padding: 10px;
+    border: 3px solid rgb(25, 25, 155);
+    border-radius: 8px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+#navegacion li:hover {
+    color: white;
+    background-color: rgb(32, 45, 104);
+    padding: 10px;
+    margin: 0px;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    padding-top: 30px;
+    padding-bottom:30px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+#navegacion ul{
+    background-color: rgb(13, 11, 46)  ;
+    margin: 0px;
+    padding: 14px;
+    padding-bottom: 17px;
+    padding-left:0px ;
+    float: right;
+    width: 78.03%;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    list-style: none;
+
+}
+#Carrito{
+    width: 35px;
+    height: 30px;
+}
+
+img{
+    width: 200px;
+    height: 150px;
+    border-radius: 10px;
+}
+
+#content{
+    float: right;
+    width: 79.1%;
+    min-height: 500px;
+    padding: 0px;
+       
+}
+#content h3{
+    margin: 0px;
+    padding: 3.5px;
+    padding-left: 0px;
+    text-align: center;
+    
+}
+#producto{
+    text-align: left;
+    background-color: white;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid white;
+    float: left;
+}
+#producto:hover{
+    text-align: left;
+    background-color: white;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+aside{
+    color: black;
+    background-color: white;
+    margin-top: 17px;
+    margin-left: 8px;
+    padding: 10px;
+    padding-top: 0px;
+    float:left;
+    width: 18.2%;
+    min-height: 700px;
+    border-radius:10px;
+    
+}
+#categorias ul{
+    margin: 0px;
+    padding: 0px;
+    padding-top: 10px;
+    
+}
+#categorias li{
+    list-style: none;
+    text-decoration: none;
+    margin: 0px;
+    padding: 8px;
+    border: 1px solid white;
+}
+#categorias li:hover{
+    color: rgb(105, 77, 44);
+    padding: 8px;
+    text-decoration: none;
+    margin: 0px;
+    border:1px solid  rgb(194, 194, 212) ;
+    background-color: rgb(194, 194, 212);
+    border-radius: 4px;
+}
+#filtro h3{
+    margin: 10px;
+    text-align: center;
+    
+    
+}
+h2{
+    margin: 0px;
+    text-align: left;
+}
