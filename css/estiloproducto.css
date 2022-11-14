@@ -1,0 +1,127 @@
+body{
+    color:black;
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: rgb(221, 223, 230);
+    margin: 0px;
+    padding: 0%;
+}
+h1{
+    color: aliceblue;
+    background-color: rgb(36, 8, 88);
+    margin-left: 40px;
+    padding: 20px 0px 20px 0px;
+    margin: 0px;
+    border-radius: 0px;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    float: left;
+    width: 20.9%;
+    text-align: center;
+}
+
+header{
+    
+    color: black ;
+    margin: 0px;
+    padding: 0px;
+    
+}
+#navegacion li {
+    display: inline;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    margin: 0px;
+    padding-top: 30px;
+    padding-bottom:30px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+#busqueda{
+    width: 600px;
+    margin: 0px;
+    padding: 10px;
+    border: 3px solid rgb(25, 25, 155);
+    border-radius: 8px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+#navegacion li:hover {
+    color: white;
+    background-color: rgb(32, 45, 104);
+    padding: 10px;
+    margin: 0px;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    padding-top: 30px;
+    padding-bottom:30px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+#navegacion ul{
+    background-color: rgb(13, 11, 46)  ;
+    margin: 0px;
+    padding: 14px;
+    padding-bottom: 17px;
+    padding-left: 0px;
+    float: right;
+    width: 78.03%;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    list-style: none;
+
+}
+#Carrito{
+    width: 35px;
+    height: 30px;
+}
+
+img{
+    width: 500px;
+    border-radius: 10px;
+}
+#content{
+    margin-left: 200px;
+    margin-right: 200px;
+}
+  
+#producto{
+    text-align: left;
+    background-color: white;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid white;
+    float: left;
+}
+#producto:hover{
+    text-align: left;
+    background-color: white;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+aside{
+    color: black;
+    background-color: white;
+    margin: 10px;
+    padding: 10px;
+    padding-top: 0px;
+    float:left;
+    width: 30%;
+    min-height: 400px;
+    border-radius:10px;
+    
+}
+#comprar{
+    background-color: white;
+    display: inline;    
+    width: 20%;
+}
+
+
+
+

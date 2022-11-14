@@ -1,0 +1,37 @@
+
+body{
+    background-color: rgb(17, 16, 16);
+    display: flex;
+    justify-content: center;
+}
+
+
+form{
+    margin-top: 20px;
+    background-color: rgb(26, 25, 25);
+    padding:  30px 60px;
+    color:rgb(179, 162, 162);
+    text-align: center;
+    
+}
+form input{
+    padding: 5px;
+    margin: 10px 0px;
+    background-color: rgb(68, 59, 59);
+    border: none;
+    color: white;
+}
+#enviar{
+    background-color: rgb(81, 160, 235);
+    padding: 10px 7px;
+    border: solid 1px rgb(81, 160, 235);
+    border-radius: 2px;
+}
+
+form a{
+    text-decoration: none;
+    color:white;
+}
+form label{
+    text-align: left;
+}
