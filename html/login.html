@@ -5,30 +5,82 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tecnoalgo</title>
-    <link rel="stylesheet" href="../css/estiloGral.css">
+    <link rel="stylesheet" href="../css/estiloFormulario.css">
 </head>
-<body>
-    <div>
-        <header>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Pagina principal</a></li>
-                </ul>
-            </nav>
-        </header>
-    </div>
+<body onload="cargarpagina()">
+    <script src="../js/jquery-3.6.1.min.js"></script>
+    <script>
+    function cargarpagina(){
+        $("#caja1").hide();
+        $("#caja2").hide();
+        $("#caja3").hide();
+        
+    }
+    function mostrarMensaje(){ 
+        let nombre = $("#nombre").val();
+        let gmail = $("#gmail").val();
+        let contraseña = $("#contraseña").val();
+        var cajas_semuestran = false;
+        if (nombre.length>3 || nombre.length == 0) {  
+            $("#caja1").hide();
+            cajas_semuestran = false;
+            
+        }else{
+            $("#caja1").show();
+            cajas_semuestran = true;
+            
+        }
+        
+        if(gmail.length>8 || gmail.length == 0){
+            $("#caja2").hide();
+            cajas_semuestran = false;
+            
+        }else{
+            $("#caja2").show();
+             cajas_semuestran = true;
+             
+        }
+        
+        if(contraseña.length>8 || contraseña.length == 0){
+            $("#caja3").hide();
+            cajas_semuestran = false;
+            
+        }else{
+            $("#caja3").show();
+             cajas_semuestran = true;
+             
+            }
+        boton(cajas_semuestran);    
+        
+    }
+    function boton(cajas_semuestran){
+        if (cajas_semuestran == false) {
+            console.log("cajas escondidas");
+        }else if(cajas_semuestran == true){
+            console.log("cajas se muestran")
+        }
+    }    
+</script>
+
     <div>
         <form>
-            <label for="nombre">Nombre:</label>
-            <input type="text"  name="Nombre" required>
+            <label for="nombre">NOMBRE:</label> <br>
+            <input type="text"  name="Nombre" id="nombre" onblur="mostrarMensaje()" required>
             <br>
-            <label>Gmail</label>
-            <input type="email" name="Gmail" required>
+            <label for="nombre" id="caja1">Nombre no valido</label>
             <br>
-            <label for="Contraseña">Contraseña:</label>
-            <input type="Password" name="contraseña" required>
+            <label>GMAIL:</label> <br>
+            <input type="email" name="Gmail" id="gmail" onblur="mostrarMensaje()" required>
+            <br>
+            <label for="gmail" id="caja2">gmail no encontrado</label>
+            <br>
+            <label for="Contraseña">CONTRASEÑA:</label> <br>
+            <input type="Password" name="contraseña" id="contraseña" onblur="mostrarMensaje()" required>
+            <br>
+            <label for="contraseña" id="caja3">contraseña no valida</label>
             <br> 
-            <input type="Submit" value="Ingresar">
+            <input type="submit" src="../index.html" id="enviar" value="Ingresar" >
+            
             <h3><a href="Registro.html">Aun no estas registrado?</a></h3>
         </form>
     </div>
