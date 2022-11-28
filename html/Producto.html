@@ -27,8 +27,8 @@
     <div id="producto">
     <img src="../img/m190-wireless-mouse-blue-gallery-01.png" alt="Producto" > 
     <br>   
-    <label>m190 wireless mouse blue</label>
-    <h3>34.000$</h3>
+    <label id="nombre">m190 wireless mouse blue</label>
+    <h3 id="precio">34.000$</h3>
 </section>
     <div>
         <aside>
@@ -41,13 +41,21 @@
                 <label><input type="radio" name="stock" value="negro" required>negro</label>
                 <label><input type="radio" name="stock" value="Blanco" disabled>Blanco(sin Stock)</label>
                 <label><input type="radio" name="stock" value="Azul" >Azul</label>
-                <a href="Carrito.html"><input type="submit" value="Añadir al carrito"></a>
+                <a href="Carrito.html"><input type="submit" onclick="alclick()" value="Añadir al carrito"></a>
                 </form>
             </div>
         </aside>
         </div>
     </div>
 </div>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.7.13/dist/vue.js"></script>
+<script>
+    function alclick(){
+        var nombre = document.getElementById("nombre");
+        var precio = document.getElementById("precio");
+        atrapar(nombre,precio);
+    }
+</script>
 
 
 </body>
