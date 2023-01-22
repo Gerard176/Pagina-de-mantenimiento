@@ -5,23 +5,14 @@ body{
     margin: 0px;
     padding: 0%;
 }
-h1{
-    color: aliceblue;
-    background-color: rgb(36, 8, 88);
-    margin-left: 40px;
-    padding: 20px 0px 20px 0px;
-    margin: 0px;
-    border-radius: 0px;
-    border-top: 3px solid black;
-    border-bottom: 3px solid black;
-    float: left;
-    width: 20.9%;
-    text-align: center;
+ul #titulo{
+    margin: 0 80px 0 80px;
+    font-size:x-large;
 }
 
 header{
     
-    color: black ;
+    color: white ;
     margin: 0px;
     padding: 0px;
     
@@ -33,7 +24,7 @@ header{
     text-align: center;
     margin: 0px;
     padding-top: 30px;
-    padding-bottom:30px;
+    padding-bottom:29px;
     padding-right: 20px;
     padding-left: 20px;
 }
@@ -41,7 +32,6 @@ header{
     width: 600px;
     margin: 0px;
     padding: 10px;
-    border: 3px solid rgb(25, 25, 155);
     border-radius: 8px;
 }
 a{
@@ -51,23 +41,15 @@ a{
 #navegacion li:hover {
     color: white;
     background-color: rgb(32, 45, 104);
-    padding: 10px;
-    margin: 0px;
     border-top: 3px solid black;
     border-bottom: 3px solid black;
-    padding-top: 30px;
-    padding-bottom:30px;
-    padding-right: 20px;
-    padding-left: 20px;
 }
 #navegacion ul{
     background-color: rgb(13, 11, 46)  ;
     margin: 0px;
     padding: 14px;
     padding-bottom: 17px;
-    padding-left: 0px;
-    float: right;
-    width: 78.03%;
+    padding-left:0px ;
     border-top: 3px solid black;
     border-bottom: 3px solid black;
     list-style: none;

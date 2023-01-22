@@ -5,16 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tecnoalgo</title>
-<link rel="stylesheet" href="../css/estiloGral.css">
+    <link rel="stylesheet" href="../css/estiloGral.css">
+    <script src="../js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
 </head>
-<body>
+<body onload="inicio()">
     
     <div id="header">
         <header>
-            <h1>Tecnoalgo</h1>
         
             <nav id="navegacion">
                 <ul>
+                    <a href="index.html"><label id="titulo">TecnoAlgo</label></a>
                     <li><a href="Registro.html">Cuenta</a></li>
                     
                     <li><input id="busqueda" type="Search" name="CampoBusqueda" placeholder="Pc, Celular, Mouse..."><input type="submit" value="Buscar"></li>
@@ -25,7 +27,7 @@
     </div>
     <section id="content">
         <h3>Para ti</h3>
-        <div id="producto">
+        <div id="producto" category="Mouse">
         <a href="Producto.html"> 
             <img src="../img/m190-wireless-mouse-blue-gallery-01.png" alt="Producto" >    
         </a>
@@ -33,25 +35,25 @@
         <label>m190 wireless mouse blue</label>
         <h2>34.000$</h2>
         </div>
-        <div id="producto">
+        <div id="producto" category="Mouse">
         <img src="../img/Mouse inalambrico.jpg" alt="Producto" >
         <br>
         <label for="">Mouse inalambrico</label>
         <h2>34.000$</h2>
         </div>
-        <div id="producto">
+        <div id="producto" category="Teclado">
         <img src="../img/teclado-genius-usb-smart-kb-100-negro-con-letra-n.webp" alt="Producto" >
         <br>
         <label for="">teclado genius</label>        
         <h2>34.000$</h2>
         </div>
-        <div id="producto">    
+        <div id="producto" category="Teclado">    
         <img src="../img/Teclado Gamer.jpg" alt="Producto" >
         <br>
         <label for="">Teclado Gamer</label> 
         <h2>34.000$</h2>
         </div>  
-        <div id="producto">
+        <div id="producto" category="Mouse">
         <a href="Producto.html"> 
             <img src="../img/m190-wireless-mouse-blue-gallery-01.png" alt="Producto" >    
         </a>
@@ -59,19 +61,19 @@
         <label>m190 wireless mouse blue</label>
         <h2>34.000$</h2>
         </div>
-        <div id="producto">
+        <div id="producto" category="Mouse">
         <img src="../img/Mouse inalambrico.jpg" alt="Producto" >
         <br>
         <label for="">Mouse inalambrico</label>
         <h2>34.000$</h2>
         </div>
-        <div id="producto">
+        <div id="producto" category="Teclado">
         <img src="../img/teclado-genius-usb-smart-kb-100-negro-con-letra-n.webp" alt="Producto" >
         <br>
         <label for="">teclado genius</label>        
         <h2>34.000$</h2>
         </div>
-        <div id="producto">    
+        <div id="producto" category="Teclado">    
         <img src="../img/Teclado Gamer.jpg" alt="Producto" >
         <br>
         <label for="">Teclado Gamer</label> 
@@ -85,17 +87,15 @@
             <label for="Precio">Precio</label>
             <input type="range" value="Precio">
         </div>
-        <div id="categorias">
-            <ul>
-            <label for="Tipo de producto">Tipo de producto</label>
-            <li><label><input type="checkbox" name="lista" value="Teclado">Teclado</label></li>
-            <li><label><input type="checkbox" name="lista" value="Mouse">Mouse</label></li>
-            <li><label><input type="checkbox" name="lista" value="Pantalla">Pantalla</label></li>
-            <li><label><input type="checkbox" name="lista" value="Portatil">Portatil</label></li>
-            <li><label><input type="checkbox" name="lista" value="Celular">Celular</label></li>
-            </ul>
+        <div class="categorias">
+            <a href="" class="categoryItem" category="all">Todo</a>
+            <a href="" class="categoryItem" category="Teclado">Teclado</a>
+            <a href="" class="categoryItem" category="Mouse">Mouse</a>
+            <a href="" class="categoryItem" category="Pantalla">Pantalla</a>
+            <a href="" class="categoryItem" category="Portatil">Portatil</a>
+            <a href="" class="categoryItem" category="Celular">Celular</a>
         </div>
-        <div id="categorias">
+        <div class="categorias">
             <ul>
             <label for="Tipo de producto">Marca</label>
             <li><label><input type="checkbox" name="lista2" value="Microsoft">Microsoft</label></li>
@@ -110,7 +110,6 @@
     <footer>
 
     </footer>
-    <script src="../js/Funciones.js"></script>
-    <script src="../js/jquery-3.6.1.min.js"></script>
+    
 </body>
 </html>
