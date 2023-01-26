@@ -5,9 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tecnoalgo</title>
+    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/estiloproducto.css">
+    <script src="../js/Product-script.js"></script>
 </head>
-<body>
+<body onload="cargarPagina()">
     <div id="header">
         <header>
         
@@ -37,26 +39,14 @@
             <p id="descripcion">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum error officia totam nobis labore pariatur fugiat similique beatae eum ipsa quo, nulla, magnam illum esse recusandae. Quos assumenda earum sequi.</p>
             <div id="comprar">
                 <form>
-                <label>Stock disponible</label>
-                <label><input type="radio" name="stock" value="negro" required>Negro</label>
-                <label><input type="radio" name="stock" value="Blanco" disabled>Blanco (sin stock)</label>
-                <label><input type="radio" name="stock" value="Azul" >Azul</label>
-                <br><br><br>
-                <a href="Carrito.html"><input type="submit" onclick="alclick()" value="Añadir al carrito"></a>
+                <a href="Carrito.html"><input class="button-cart"type="submit" onclick="alclick()" value="Añadir al carrito"></a>
                 </form>
             </div>
         </aside>
         </div>
     </div>
 </div>
-<script src="https://cdn.jsdelivr.net/npm/vue@2.7.13/dist/vue.js"></script>
-<script>
-    function alclick(){
-        var nombre = document.getElementById("nombre");
-        var precio = document.getElementById("precio");
-        atrapar(nombre,precio);
-    }
-</script>
+
 
 
 </body>

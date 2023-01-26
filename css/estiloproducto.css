@@ -114,5 +114,12 @@ aside{
     align-items: center;
 }
 
+.button-cart{
+    color: white;
+    background-color: rgb(32, 45, 104);
+    padding: 5px 15px 5px 15px;
+    margin: auto;
+}
+
 
 
