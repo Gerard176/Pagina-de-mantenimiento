@@ -26,11 +26,20 @@
     </div>
     <div id="content">
 <section>
-    <div id="producto">
-    <img src="../img/m190-wireless-mouse-blue-gallery-01.png" alt="Producto" > 
-    <br>   
-    <label id="nombre">m190 wireless mouse blue</label>
-    <h3 id="precio">34.000$</h3>
+    <script id="template" type="text/template">
+        <div class="product">
+            <div class="producto">
+                <img class="product-img"  alt="Producto" > 
+                <br>   
+                <label class="product-name"></label>
+                <h3 class="product-price"></h3>
+    
+            </div>
+        </div>
+        
+        
+    </script>
+    <div id="product-container"></div>
 </section>
     <div>
         <aside>
@@ -39,7 +48,7 @@
             <p id="descripcion">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum error officia totam nobis labore pariatur fugiat similique beatae eum ipsa quo, nulla, magnam illum esse recusandae. Quos assumenda earum sequi.</p>
             <div id="comprar">
                 <form>
-                <a href="Carrito.html"><input class="button-cart"type="submit" onclick="alclick()" value="Añadir al carrito"></a>
+                <a href="Carrito.html"><input class="button-cart"type="submit" value="Añadir al carrito"></a>
                 </form>
             </div>
         </aside>

@@ -64,14 +64,20 @@ $(document).ready(function(){
         templatejq.find('.product-img').attr("src", producto.img);
     
         $("#product-container").append(templatejq);
-    
+
     });
-})
-    function guardarInfo(){
+    $(".product").click(function(){
+        var data = productos[$(this).index()];
+        console.log(data);
+        sessionStorage.setItem("clikedData", JSON.stringify(data));
+    });
     
-        var name = document.querySelector('.product-name');
-        var value = name.value;
-        console.log(value);
-        sessionStorage.setItem("nombre", value);
-    }
+});
+    // function guardarInfo(){
+    
+    //     var name = $(".product-name");
+    //     var nombreusuario = name.text();
+    //     console.log(nombreusuario);
+    //     sessionStorage.setItem("nombre", nombreusuario);
+    // }
 

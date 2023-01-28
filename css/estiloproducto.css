@@ -69,7 +69,7 @@ img{
     margin-right: 200px;
 }
   
-#producto{
+.producto{
     text-align: left;
     background-color: white;
     margin: 10px;
@@ -78,7 +78,7 @@ img{
     border: 1px solid white;
     float: left;
 }
-#producto:hover{
+.producto:hover{
     text-align: left;
     background-color: white;
     margin: 10px;
