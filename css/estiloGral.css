@@ -23,15 +23,15 @@ header{
     color: white;
     text-align: center;
     margin: 0px;
-    padding-top: 30px;
-    padding-bottom:29px;
+    padding-top: 31px;
+    padding-bottom:27px;
     padding-right: 20px;
     padding-left: 20px;
 }
 #busqueda{
     width: 600px;
     margin: 0px;
-    padding: 10px;
+    padding: 9px;
     border-radius: 8px;
 }
 a{
@@ -47,7 +47,7 @@ a{
 #navegacion ul{
     background-color: rgb(13, 11, 46)  ;
     margin: 0px;
-    padding: 14px;
+    padding: 16px;
     padding-bottom: 17px;
     padding-left:0px ;
     border-top: 3px solid black;
@@ -101,25 +101,33 @@ img{
 aside{
     color: black;
     background-color: white;
-    margin-top: 10px;
-    margin-left: 8px;
+    /* margin-top: 10px; */
+    /* margin-left: 8px; */
     padding: 10px;
     padding-top: 0px;
     float:left;
     width: 18.2%;
     min-height: 700px;
-    border-radius:10px;
+    /* border-radius:10px; */
     
 }
 .categorias .categoryItem{
-    margin: 5px;
+    color: black;
+    /* border: 1px black solid; */
     padding: 7px 0px;
     text-align: center;
-    background-color: rgb(11, 100, 100);
+    background-color: rgb(255, 255, 255);
     
 }
+.categorias :hover{
+    font-weight: 700;
+    color: rgb(73, 72, 15);
+    background-color: rgb(167, 159, 159);
+    border: 0.5px solid black;
+}
 .categorias .categoria-activa{
-    background-color: green;
+    background-color:  rgb(167, 159, 159);
+    color: black;
 }
 .categorias {
     display: flex;
@@ -131,17 +139,10 @@ aside{
     border: 1px solid white;
 }
 
-/* #categorias :hover{
-    color: rgb(105, 77, 44);
-    padding: 8px;
-    text-decoration: none;
-    margin: 0px;
-    border:1px solid  rgb(194, 194, 212) ;
-    background-color: rgb(194, 194, 212);
-    border-radius: 4px;
-} */
+ 
 #filtro h3{
-    margin: 10px;
+    margin-top: 10px;
+    margin-bottom: 5px;
     text-align: center;
     
     

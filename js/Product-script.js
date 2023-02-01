@@ -12,7 +12,13 @@
 
         $("#product-container").append(plantillajq);
 
-        console.log(datos); 
-    }    
+        console.log(datos);
+
+        $(".button-cart").click(function(){
+            sessionStorage.setItem("cliked-button", JSON.stringify(datos));
+            console.log(datos)
+        });   
+    } 
+    
 
 

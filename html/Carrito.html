@@ -7,9 +7,9 @@
     <title>Document</title>
     <link rel="stylesheet" href="../css/estiloCarrito.css">
     <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
-    <script src="../js/Carrito.js"></script>
+    <script src="../js/carrito-code.js"></script>
 </head>
-<body>
+<body onload="cargarPagina()">
     <div id="header">
         <header>
         
@@ -26,25 +26,31 @@
     </div>
 
     <h2>Lista de compras</h2>
-    <div class="producto" >
-        <a href="Producto.html"> 
-            <img src="../img/m190-wireless-mouse-blue-gallery-01.png" alt="Producto" >    
-        </a>
+    <script id="plantilla" type="text/template">
+        <div class="product">
+             
+            <div class="producto">
+                <ul>
+                    <li><a href="Producto.html">
+                        <label class="productoNombre"></label>
+                        </a>
+                    </li>
+                    <li><label class="productoPrecio"></label></li>
+                    <li><label class="cantidad">cantidad</label></li>
+                    <label class="numberof-products"></label>
+                    <li><button class="erase" >borrar</button></li>
+                    
+                </ul>
+           
+            </div>
         
-        <div class="seccion1">
-            <label >Descripcion</label>
-            <p id="descripcion"> necessitatibus maxime voluptatum fugiat esse laborum?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati ab nostrum voluptas provident laudantium at maxime expedita totam quam minus, exercitationem qui neque quis natus beatae placeat atque quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod quis maxime, asperiores quo perferendis iusto ut quas delectus incidunt deleniti harum magni. Atque porro velit, iste quos in explicabo nulla!Lorem</p>
-        </div>
-        <div class="opciones">
-            <label class="cantidad">cantidad</label>
-            <input type="text">
-            <button class="borrar">Borrar</button>
-            
-        </div>
-        <label id="productoNombre">{{nombre}}</label>
-        <label id="productoPrecio">34.000$</label>
-            
+          
     </div>
+    
+    </script>
+        
+    <div id="product-container"></div>        
+    
    
     
 </body>

@@ -50,7 +50,13 @@ $(document).ready(function(){
              precio: "2000000",
              category:"Portatil",
              img:"https://caracol.com.co/resizer/aJQJQa85E7yNSX5wHsBoHgvthmg=/650x488/filters:format(jpg):quality(70)/cloudfront-us-east-1.images.arcpublishing.com/prisaradioco/W6PTLYVKORIMTGWY3XTHKWG6N4.jpg"
-         }
+         },
+		 {
+			nombre:"xiaomi Redmi 9",
+			precio:"500000",
+			category:"Celular",
+			img:"https://http2.mlstatic.com/D_NQ_NP_642492-MLA44598911410_012021-O.jpg" 
+		 }
          ]
     $.each(productos, function(index,producto){
         
